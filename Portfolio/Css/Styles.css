@@ -365,7 +365,8 @@ footer {
   }
   .nav-burger {
     display: block;
-    text-align: end;
+    position: absolute;
+    right: 0;
   }
   .nav-burger :focus:not(:focus-visible) {
     outline: none;
