@@ -4,54 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icon-web.png" type="image/x-icon">
     <link rel="stylesheet" href="../Css/Styles.css">
     <title>Portfolio</title>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Portfolio</div>
+            <div>
+                <img  class="logo" src="../img/Logo.png" alt="picture" />
+            </div>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Proyects</a></li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Contact</a></li>
+                <li>
+                    <a href="#section-profile">
+                    <i class="fa-solid fa-house"></i>Home</a>
+                    </li>
+                <li>
+                    <a href="#section-about">
+                    <i class="fa-solid fa-user"></i>About</a>
+                </li>
+                <li>
+                    <a href="#section-proyects">
+                    <i class="fa-solid fa-briefcase"></i>Proyects</a>
+                </li>
+                <li>
+                    <a href="#section-contact">
+                    <i class="fa-solid fa-comment"></i>Contact</a>
+                </li>
             </ul>
             <span class="nav-burger">
-                <i class="fa-solid fa-bars"></i>
+                <i  id="open" class="fa-solid fa-bars"></i>
+                <i id="close" class="fa-solid fa-xmark"></i>
             </span>
+            
         </nav>
     </header>
-    <section class="profile">
+    <section id="section-profile" class="profile">
         <div class="info-profile">
             <div>
-                <img src="../img/Logo.png" alt="Logo"/>
+                <h2>
+                    Hi, my name is <span class="name">David Cardenas </span>
+                </h2>
             </div>
-            <h2>
-                David Cardenas 
-            </h2>
-            <a class="btn-download" href="../img/Descarga.txt" download="Download">
-                <span>Download CV</span>
-                <i class="fa-solid fa-download"></i>
-            </a>
+            <div>
+                <img src="../img/Picture.png" alt="Logo"/>
+            </div>
+            <div>
+                <a class="btn-download" href="../img/Descarga.txt" download="Download">
+                    <span>Download CV</span>
+                    <i class="fa-solid fa-download"></i>
+                </a>
+                <a class="btn" href="https://github.com/Jdcarsa">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
         </div>
     </section>
-    <section class="about-me">
+    <section id="section-about" class="about-me">
         <div class="container">
             <section class="container-1">
                 <div class="sec-text">
-                    <h2>About Me</h2>
+                    <h2 class="name">About Me</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur obcaecati ullam impedit assumenda dignissimos facere ducimus minus voluptas doloremque placeat, nesciunt quas modi, dolor aliquid voluptatem. Quo, dolore. Quis, commodi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                     </p>
                 </div>
-                <img src="../img/Logo.png" alt="Logo"/>
+                <img src="../img/programmer-desing.svg" alt="Picture-about"/>
             </section>
         </div>
     </section>
     
     <section class="container">
-        <div class="title">
+        <div class="titles">
             <h2>Skills</h2>
         </div>
             <div class="skills">
@@ -77,13 +101,6 @@
                     </div>
                 </div>
                 <div class="skill-info">
-                    <img src="../img/icon-react.png" alt="React"/>
-                    <div class="description-skill">
-                        <h3>React</h3>
-                        <span>Basic</span>
-                    </div>
-                </div>
-                <div class="skill-info">
                     <img src="../img/icon-java.png" alt="Java"/>
                     <div class="description-skill">
                         <h3>Java</h3>
@@ -93,8 +110,8 @@
             </div>
     </section>
 
-    <section class="proyects">
-        <div class="title">
+    <section id="section-proyects" class="proyects">
+        <div class="titles">
             <h2>Proyects</h2>
         </div>
         <div class="cards-proyects">
@@ -102,53 +119,65 @@
                 <img src="../img/proyect-img.png" alt="proyect-1">
                 <h4>Title proyect</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#" class="btn-card">View proyect</a>
-                <a href="#" class="btn-card">Github repository</a>
+                <div>
+                    <a href="#" class="btn-card">View proyect</a>
+                    <a href="#" class="btn-card">Github repository</a>
+                </div>
             </div>
             <div class="card">
                     <img src="../img/proyect-img.png" alt="proyect-2">
                     <h4>Title proyect</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#" class="btn-card">View proyect</a>
-                    <a href="#" class="btn-card">Github repository</a>
+                    <div>
+                        <a href="#" class="btn-card">View proyect</a>
+                        <a href="#" class="btn-card">Github repository</a>
+                    </div>
             </div>
             <div class="card">
                 <img src="../img/proyect-img.png" alt="proyect-3">
                 <h4>Title proyect</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#" class="btn-card">View proyect</a>
-                <a href="#" class="btn-card">Github repository</a>
+                <div>
+                    <a href="#" class="btn-card">View proyect</a>
+                    <a href="#" class="btn-card">Github repository</a>
+                </div>
             </div>
         </div>
     </section>
     
-    <section class="container">
+    <footer id="section-contact" class="container">
         <div class="container-1">
-            <img  class="logo"src="../img/Logo.png" alt="Logo"/>
+                <div class="social-net">
+                    <h2 class="contac">Contact me</h2>
+                    <ul>
+                        <li><a href="https://www.instagram.com/davcarsa/?hl=es-la"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=" https://wa.me/+573155588233"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                    <span class="credits">©Davcarsa All rigths reserved</span>
+                </div>
                 <div class="contac-me"> 
-                    <form action="" method="">
-                            <h3>Send me an email</h3>
-                            <input type="text" name="name"class="input-text" placeholder="Name:"/>
-                            <input type="text" name="email" class="input-text" placeholder="Email:"/>
-                            <textarea class="message" name="message" placeholder="Message:"></textarea>
+                    <form id='form' action="https://formspree.io/f/xrgwzdgl"
+                    method="POST">
+                            <h3 class="name">Send me an email</h3>
+                            <div class="input">
+                                <input type="text" name="name" id="name" class="input-text" placeholder="Name:">
+                                </input>
+                            </div>
+                            <div class="input">
+                                <input type="text" name="email" id="email" class="input-text" placeholder="Email:"></input>
+                                <span class="message-error">Invalid Email</span>
+                            </div>
+                            <div class="input">
+                                <textarea id="message" name="message" class="message"  placeholder="Message:"></textarea>
+                            </div>
                             <input type="submit" class="btn-send" value="Send"/>
-                    </from>
+                    </form>
                 </div>
         </div>
-    </section>
-
-    <footer>
-            <div class="social-net">
-                <h2>Contact me</h2>
-                <ul>
-                    <li><a href="https://www.instagram.com/davcarsa/?hl=es-la"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href=" https://wa.me/+573155588233"><i class="fa-brands fa-whatsapp"></i></a></li>
-                    <li><a href="https://github.com/Jdcarsa"><i class="fa-brands fa-github"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                </ul>
-                <span>©Davcarsa All rigths reserved</span>
-            </div>
     </footer>
+
 </body>
 <script src="https://kit.fontawesome.com/84f049e180.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="../Javascript/Script.js"></script>

@@ -1,8 +1,7 @@
-$color-main:#800000;
-$color-text: #fff;
+$color-main:#eb0303;
+$color-text: #fdffff;
 $red: #ff0000ff;
-$international-orange-engineering: #bf0000ff;
-$black-bean: #400000ff;
+$international-orange-engineering: rgb(231, 9, 9);
 $black: #000000ff;
 
 @mixin style-text{
@@ -13,9 +12,34 @@ $black: #000000ff;
     }
 }
 
+@mixin style-titles{
+    color:$color-main;
+    font-family:'Clicker Script' , cursive;
+}
+
+@mixin style-btn{
+    display: inline-block;
+    background-color: $international-orange-engineering;
+    color: $color-text;
+    font-size: 16px;
+    text-align: center;
+    transition: all .5s ease; 
+    padding: 8px 5px;
+    margin: 14px 5px;
+    text-decoration: none;
+    border-radius: 10px;
+    &:hover{
+        box-shadow: 0 6px 20px $international-orange-engineering;
+        animation: all .5s ease;
+        cursor: pointer;
+        text-shadow: 4px 4px 4px $black;
+    }
+}
+
 .logo{
-    font-weight: bold;
-    font-size: 20px;
+    margin-top: 5px;
+    height: 20px;
+    width: 150px
 }
 
 .menu{
@@ -29,6 +53,9 @@ $black: #000000ff;
         a{
             text-decoration: none;
             color: $color-text;
+            i{
+                margin-right: 10px;
+            }
             &:hover{
                     color: $international-orange-engineering;
                     transition: ease-in-out .2s;
@@ -40,35 +67,52 @@ $black: #000000ff;
 
 
 .nav-burger{
+    display: none;
     color: $color-text;
     border: none;
     font-size: 20px;
     padding: 0 20px;
     line-height: 60px;
     cursor: pointer;
-    display: none;
+    #close{
+        display: none;
+    }
 }
 
 .sec-text{
     @include style-text();
     h1{
         font-size: 70px;
-        font-weight: 400;
+        font-weight: 500;
         margin: 0;
     }
     h2{
-        color: $red;
+        
+        color:$color-main;
         font-size: 70px;
         font-weight: 300;
         margin: 0;
     }
 }
 
+.name{
+    @include style-titles();
+    font-size: 30px;
+}
+
+
+
+.titles{
+    @include style-titles();
+    font-size: 40px;
+    text-align: center;
+}
+
 .info-profile{
     display: grid;
     place-items: center;
-    margin: 50px 0 70px 0px;
-    padding: 50px;
+    margin: 50px 0 0px 0px;
+    padding-top: 30px;
     grid-template-columns: repeat(1,1fr);
     img{
         width:150px;
@@ -76,22 +120,22 @@ $black: #000000ff;
         border-radius:160px;
         border:3px solid $color-main;    
     }
+    .description{
+        width: 80%;
+    }
+}
+
+.btn{
+    @include style-btn();
+    text-align: center;
+    width: 30px;
+    height: 25px;
 }
 
 .btn-download{
-    text-decoration: none;
-    display: inline-block;
+    @include style-btn();
     width: 150px;
     height: 25px;
-    padding: 8px 5px;
-    margin:auto;
-    background-color: $international-orange-engineering;
-    color: $color-text;
-    border-radius: 10px;
-    font-size: 16px;
-    text-align: center;
-    transition: all .5s ease; 
-    box-shadow: 0 8px 28px $international-orange-engineering;
     span{
         display: inline-block;
         position: relative;
@@ -99,22 +143,21 @@ $black: #000000ff;
     i{
         padding: 5px 0 0 5px;
     }
-    &:hover{
-        box-shadow: 0 8px 20px $international-orange-engineering;
-        animation: all .5s ease;
-    }
+
 }
 
 
 
 .skill-info{
     display: grid;
-    width: 60%;
+    width: 80%;
     place-items: center;
     grid-template-columns: repeat(2,1fr);
     margin: 10px;
-    padding: 10px;
+    padding: 10px 20px;
     gap: 20px;
+    box-shadow: 0 1px 5px $color-text;
+    border-radius: 40px;
     img{
         text-align: center;
     }
@@ -124,7 +167,7 @@ $black: #000000ff;
             margin-right: 10px;
         }
         span{
-            opacity: 0.4;
+            opacity: 0.7;
         }
     }
 }
@@ -139,48 +182,50 @@ $black: #000000ff;
 }
 
 .card{
-    background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
     height: 320px;
     width: 330px;
-    border-radius: 12px;
+    border-radius: 30px;
     overflow: hidden;
     text-align: center;
     margin: 10px;
+    background: #242323;
     &:hover{
         transform: translateY(-15px);
-        box-shadow: 0 6px 7px $black-bean;
+        box-shadow: 0 6px 20px $international-orange-engineering;
+        transition: transform 0.3s ease-in-out;
+        img{
+            opacity: 1;
+        }
     }
     img{
         height: 130px;
         width: 100%;
-            opacity: 0.4;
+            opacity: 0.7;
     }
     h4{
-        font-weight: 400;
+        font-weight: 500;
         margin: 5px;
     }
     p{
-        font-weight: 100;
+        font-weight: 300;
+        margin-bottom: 25px;
     }
     a{
-        font-weight: 400;
+        font-weight: 600;
         text-decoration: none;
         color: $color-text;
         margin-left: 20px;
         position: relative;
-        transition: color 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         &::before{
             content: "";
             position: absolute;
             top: 100%;
             width: 100%;
             height: 2px;
-            background-color: #fff;
+            background-color: $color-main;
             transform: scaleX(0);
             transition: transform 0.3s ease-in-out;
-        }
-        &:hover{
-            color: #fff;
         }
         &:hover::before{
             transform: scaleX(1);
@@ -191,56 +236,62 @@ $black: #000000ff;
 
 
 .input-text{
-    background: #f5f5f517;
+    background: #f5f5f517;;
     color: $color-text;
     padding: 10px 20px;
     border: none;
-    border-radius: 8px;
-    width: 80%;
+    border-radius: 20px;
+    width: 90%;
     height: 20px;
     outline: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 .message{
-    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
     height: 100px;
     background: #f5f5f517;
     color: $color-text;
     padding: 10px 20px;
     border: none;
-    border-radius: 8px;
+    border-radius: 20px;
     outline: none;
     resize:none;
 }
 
 .btn-send{
+    position: relative;
+    left: 11px;
+    border-radius: 10px;
     font-size: 18px;
     border: none;
     background-color: $international-orange-engineering;
-    padding: 8px 5px;
-    border-radius: 8px;
+    padding: 8px 0px;
     color: $color-text;
     width: 30%;
     cursor: pointer;
-    box-shadow: 0 8px 28px $international-orange-engineering;
+    text-align: center;
+    transition: all .5s ease; 
     &:hover{
-        box-shadow: 0 8px 22px $international-orange-engineering;
+        box-shadow: 0 4px 20px $international-orange-engineering;
         animation: all .5s ease;
+        cursor: pointer;
+        text-shadow: 4px 4px 4px $black;
     }
 }
 
 .social-net{
-    display: flex;
+    display: grid;
     justify-items: center;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 40px;
     padding: 20px;
     ul{
         list-style: none;
+        padding: 0;
+        margin: 0px;
         li{
             display: inline;
-            padding: 0 20px;
+            padding: 0 5px;
             a{
                 text-decoration: none;
                 i{
@@ -251,15 +302,48 @@ $black: #000000ff;
                     text-align: center;
                     font-size: 20px;
                     margin: 5px  14px;
-                    border: 1px solid #adb6c7;
+                    border: 1px solid $color-text;
                     border-radius: 50%;
-                    transition: all ease-in-out .3s;
                     &:hover{
-                        background-color: $color-main;
-                        border-color: $color-main;
+                        transition: all ease-in-out .3s;
+                        color: $red;
+                        border-color: $red; 
                     }
                 }
             }
         }
     }
 }
+
+.credits{
+    @include style-titles();
+    color: $color-text;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.contac{
+    @include style-titles();
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.input{
+    width: 90%;
+    text-align: end;
+    .message-error{
+        display: none;
+        color: hsl(0, 97%, 60%);
+        font-size: 12px;
+    }
+}
+
+.error{
+    border: 1.5px solid hsl(0, 97%, 60%);
+    &::placeholder{
+        color: hsl(0, 97%, 60%);
+    }
+}
+
+
+

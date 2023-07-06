@@ -1,32 +1,37 @@
 @use "Components" as com;
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600&display=swap');
 
 
 
 html{
-    font-family: 'Heebo', sans-serif;;
+    font-family: 'Poppins', sans-serif;
     background: #2C2C2C;
-    background: linear-gradient(90deg, rgb(29, 26, 26) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgb(29, 26, 26) 0%, rgb(19, 18, 18) 100%);
+    
     &::-webkit-scrollbar{
         background: #2C2C2C;
         background: linear-gradient(90deg, rgb(29, 26, 26) 0%, rgba(0,0,0,1) 100%);
-        height: 1px;
         width: 6px;
+        height: 6px;
     }
     &::-webkit-scrollbar-thumb{
         background-color: com.$color-main;
-        border-radius: 15px;
+        border-radius: 20px;
     }
+    
 }
+
 
 body{
     margin: 0;
     padding: 0;
     color: com.$color-text;
+    box-sizing: border-box;
 }
 
 
 nav{
+    display: block;
     position: fixed;
     top: 0;
     z-index: 100;
@@ -34,15 +39,15 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 60px;
     padding: 0 100px;
     background: #242323;
 }
 
 .container{
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
-    padding-top: 40px;
+    padding-top: 10px;
 }
 
 .container-1{
@@ -55,18 +60,12 @@ nav{
     img{
         margin: 20px;
         width: 400px;
-        height: 400px;
+        height: 300px;
     }
 }
 /* sass --watch Sass/Styles.scss Css/Styles.css*/
 
-.about-me{
-    &::before {
-        content: "";
-        display: block;
-        margin-bottom: 80px;
-    }
-}
+
 
 .skills{
     display: grid;
@@ -78,6 +77,7 @@ nav{
 
 .proyects{
     margin: 40px 0;
+    margin-top: 80px;
     width: 100%;
 }
 
@@ -94,8 +94,9 @@ nav{
     gap: 20px;
     width: 50%;
     h3{
-        color: com.$red;
-        font-size: 25px;
+        color: com.$color-main;
+        font-family:'Clicker Script' , cursive;
+        font-size: 35px;
         margin: 5px;
     }
     form{
@@ -105,14 +106,15 @@ nav{
 }
 
 footer{
-    background: #41414117;
+    width: 90%;
+    padding-bottom: 20px;
 }
 
 
 
 
 
-@media  (max-width: 800px) {
+@media  (max-width: 850px) {
     nav{
         width: calc(100% - 200px);
     }
@@ -121,13 +123,13 @@ footer{
             flex-direction: column;
             position: fixed;
             align-items: center;
-            background: linear-gradient(90deg, rgb(29, 26, 26) 0%, rgb(19, 18, 18) 100%);
+            background: #242323;
             top: 50px;
             width: 100%;
             padding: 20px 0;
             top: -100%;
             left: 0;
-            border: 0.5px solid #242323a6;
+            border: 0.5px solid #111111a6;
             li{
                 margin-right: 0;
             }
@@ -142,14 +144,22 @@ footer{
         }
     }
 
+
     .menu_visible {
-        top:63px;
+        top:44px;
         z-index: 100;
     }
 
     .logo{
         position: absolute;
-        left: 30px;
+        left: 10px;
+        top: 18px;
+    }
+
+    .info-profile{
+        .name{
+            display: block;
+        }
     }
 
     .container-1{
@@ -158,13 +168,10 @@ footer{
             width: 300px;
             height: 300px;
         }
-        .logo{
-            display: none;
-        }
     }
 
     .contac-me{
-        width: 60%;
+        width: 90%;
         form{
             place-items: center;
         }
@@ -177,13 +184,30 @@ footer{
     }
 
     .card{
-        width: 300px;
+        width: 260px;
+        div{
+            display: flex;
+        }
+        .btn-card{
+            &::before{
+                position: absolute;
+                left: 18px;
+                width: 70%;
+            }
+        }
+    }
+
+    .btn-send{
+        width: 90%;
+    }
+
+    .credits{
+        font-size: 20px;
     }
 
     .social-net{
         flex-direction: column;
         ul{
-            padding-bottom: 10px;
             li{
                 padding: 0;
                 width: 40px;
