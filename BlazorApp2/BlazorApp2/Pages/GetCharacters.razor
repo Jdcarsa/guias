@@ -1,0 +1,77 @@
+﻿@page "/GetCharacters"
+@using BlazorApp2.Models;
+@using Newtonsoft.Json;
+@inject HttpClient client;
+
+<PageTitle>Characters</PageTitle>
+<h1>Rick and Morty Characters</h1>
+
+<div class="row">
+	@foreach (var character in characters.results.AsEnumerable())
+	{
+		<div class="col mt-3">
+			<div class="card">
+				<img src="@character.image" class="card-img-top" alt="Sin imagen" />
+				<div class="card-body">
+					<p class="card-text"><strong>@character.name</strong></p>
+					<p class="card-text">@character.species</p>
+					<p class="card-text">@character.origin.name</p>
+					<p class="card-text">@character.location.name</p>
+				</div>
+			</div>
+		</div>
+	}
+</div>
+
+<div class="mt-5">
+	<nav aria-label="Page navigation example">
+		<div style="text-align:center">
+			Page @Page of @characters.info.pages
+			<strong>Items @(characters.results.Count * Page)</strong> of
+			<strong>@(Total)</strong>
+		</div>
+		<ul class="pagination">
+			<li class="page-item @(Page == 1 ? "disabled" : "")">
+				<a class="page-link" @onclick="@(()=> GetCharactersAPI(Page-1))">Previous</a>
+			</li>
+			<li class="page-item @(Page == characters.info.pages ? "disabled" : "")">
+				<a class="page-link" @onclick="@(()=> GetCharactersAPI(Page+1))">Next</a>
+			</li>
+		</ul>
+	</nav> 
+</div>
+
+
+
+@code {
+	public Characters characters { get; set; }
+
+	public int Page { get; set; }
+	public int Total { get; set; }
+	protected override async Task OnInitializedAsync()
+	{
+		Page = 1;
+		await GetCharactersAPI(Page);
+	}
+
+
+	private async Task GetCharactersAPI(int page)
+	{
+		try
+		{
+			Page = page;
+			HttpResponseMessage httpResponseMessage = await client.GetAsync($"https://rickandmortyapi.com/api/character/?page={Page}");
+			string responseBody = await httpResponseMessage.Content.ReadAsStringAsync();
+			characters = JsonConvert.DeserializeObject<Characters>(responseBody);
+			Total = characters.info.count;
+
+
+		}
+		catch (Exception e)
+		{
+			Total = 0;
+			Console.WriteLine(e.Message);
+		}
+	}
+}
+

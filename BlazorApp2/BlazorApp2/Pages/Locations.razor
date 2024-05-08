@@ -1,0 +1,74 @@
+﻿@page "/Locations"
+@using BlazorApp2.Models;
+@using Newtonsoft.Json;
+@inject HttpClient client;
+
+
+<PageTitle>Locations</PageTitle>
+<h1>Locations</h1>
+
+<div class="row">
+	@foreach (var location in locations.results.AsEnumerable())
+	{
+		<div class="col mt-3">
+			<div class="locat">
+				<div class="card-body">
+					<p class="card-text"><strong>@location.name</strong></p>
+					<p class="card-text">@location.type</p>
+					<p class="card-text">@location.dimension</p>
+				</div>
+			</div>
+		</div>
+	}
+</div>
+
+<div class="mt-5">
+	<nav aria-label="Page navigation example">
+		<div style="text-align:center">
+			Page @Page of @locations.info.pages
+			<strong>Items @(locations.results.Count * Page)</strong> of
+			<strong>@(Total)</strong>
+		</div>
+		<ul class="pagination">
+			<li class="page-item @(Page == 1 ? "disabled" : "")">
+				<a class="page-link" @onclick="@(()=> GetLocationsAPI(Page-1))">Previous</a>
+			</li>
+			<li class="page-item @(Page == locations.info.pages ? "disabled" : "")">
+				<a class="page-link" @onclick="@(()=> GetLocationsAPI(Page+1))">Next</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+
+
+
+@code {
+	public LocationPage locations { get; set; }
+
+	public int Page { get; set; }
+	public int Total { get; set; }
+	protected override async Task OnInitializedAsync()
+	{
+		Page = 1;
+		await GetLocationsAPI(Page);
+	}
+
+
+	private async Task GetLocationsAPI(int page)
+	{
+		try
+		{
+			Page = page;
+			HttpResponseMessage httpResponseMessage = await client.GetAsync($"https://rickandmortyapi.com/api/location?page{Page}");
+			string responseBody = await httpResponseMessage.Content.ReadAsStringAsync();
+			locations = JsonConvert.DeserializeObject<LocationPage>(responseBody);
+			Total = locations.info.count;
+
+		}
+		catch (Exception e)
+		{
+			Total = 0;
+			Console.WriteLine(e.Message);
+		}
+	}
+}

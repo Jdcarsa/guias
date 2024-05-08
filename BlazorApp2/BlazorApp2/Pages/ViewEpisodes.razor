@@ -1,0 +1,74 @@
+﻿@page "/Episodes"
+@using BlazorApp2.Models;
+@using Newtonsoft.Json;
+@inject HttpClient client;
+
+<PageTitle>Episodes</PageTitle>
+<h1>Rick and Morty Episodes</h1>
+
+<div class="row">
+	@foreach (var episode in episodes.results.AsEnumerable())
+	{
+		<div class="col mt-3">
+			<div class="card">
+				<div class="card-body">
+					<p class="card-text"><strong>@episode.name</strong></p>
+					<p class="card-text">@episode.episode</p>
+					<p class="card-text">@episode.air_date</p>
+				</div>
+			</div>
+		</div>
+	}
+</div>
+
+<div class="mt-5">
+	<nav aria-label="Page navigation example">
+		<div style="text-align:center">
+			Page @Page of @episodes.info.pages
+			<strong>Items @(episodes.results.Count * Page)</strong> of
+			<strong>@(Total)</strong>
+		</div>
+		<ul class="pagination">
+			<li class="page-item @(Page == 1 ? "disabled" : "")">
+				<a class="page-link" @onclick="@(()=> GetEpisodesAPI(Page-1))">Previous</a>
+			</li>
+			<li class="page-item @(Page == episodes.info.pages ? "disabled" : "")">
+				<a class="page-link" @onclick="@(()=> GetEpisodesAPI(Page+1))">Next</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+
+
+
+@code {
+	public Episodes episodes { get; set; }
+
+	public int Page { get; set; }
+	public int Total { get; set; }
+	protected override async Task OnInitializedAsync()
+	{
+		Page = 1;
+		await GetEpisodesAPI(Page);
+	}
+
+
+	private async Task GetEpisodesAPI(int page)
+	{
+		try
+		{
+			Page = page;
+			HttpResponseMessage httpResponseMessage = await client.GetAsync($"https://rickandmortyapi.com/api/episode?page={Page}");
+			string responseBody = await httpResponseMessage.Content.ReadAsStringAsync();
+			episodes = JsonConvert.DeserializeObject<Episodes>(responseBody);
+			Total = episodes.info.count;
+
+		}
+		catch (Exception e)
+		{
+			Total = 0;
+			Console.WriteLine(e.Message);
+		}
+	}
+}
+

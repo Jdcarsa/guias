@@ -1,0 +1,213 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ideapad330S\\Documents\\U\\soft lll\\BlazorApp2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A5531B2-34A0-45E3-8A13-1C1DDB96AF5D}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\ideapad330s\\documents\\u\\soft lll\\blazorapp2\\blazorapp2\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A5531B2-34A0-45E3-8A13-1C1DDB96AF5D}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A5531B2-34A0-45E3-8A13-1C1DDB96AF5D}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\ideapad330s\\documents\\u\\soft lll\\blazorapp2\\blazorapp2\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A5531B2-34A0-45E3-8A13-1C1DDB96AF5D}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A5531B2-34A0-45E3-8A13-1C1DDB96AF5D}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\ideapad330s\\documents\\u\\soft lll\\blazorapp2\\blazorapp2\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A5531B2-34A0-45E3-8A13-1C1DDB96AF5D}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A5531B2-34A0-45E3-8A13-1C1DDB96AF5D}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\ideapad330s\\documents\\u\\soft lll\\blazorapp2\\blazorapp2\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A5531B2-34A0-45E3-8A13-1C1DDB96AF5D}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A5531B2-34A0-45E3-8A13-1C1DDB96AF5D}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\ideapad330s\\documents\\u\\soft lll\\blazorapp2\\blazorapp2\\pages\\locations.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A5531B2-34A0-45E3-8A13-1C1DDB96AF5D}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\pages\\locations.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A5531B2-34A0-45E3-8A13-1C1DDB96AF5D}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\ideapad330s\\documents\\u\\soft lll\\blazorapp2\\blazorapp2\\models\\episodes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A5531B2-34A0-45E3-8A13-1C1DDB96AF5D}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\models\\episodes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A5531B2-34A0-45E3-8A13-1C1DDB96AF5D}|BlazorApp2\\BlazorApp2.csproj|c:\\users\\ideapad330s\\documents\\u\\soft lll\\blazorapp2\\blazorapp2\\models\\episode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A5531B2-34A0-45E3-8A13-1C1DDB96AF5D}|BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\models\\episode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 235,
+          "SelectedChildIndex": 18,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:17:0:{6bf11835-8a31-496c-b01e-94f731afc7ce}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:24:0:{6bf11835-8a31-496c-b01e-94f731afc7ce}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:19:0:{6bf11835-8a31-496c-b01e-94f731afc7ce}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:20:0:{6bf11835-8a31-496c-b01e-94f731afc7ce}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:23:0:{6bf11835-8a31-496c-b01e-94f731afc7ce}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:21:0:{6bf11835-8a31-496c-b01e-94f731afc7ce}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:22:0:{6bf11835-8a31-496c-b01e-94f731afc7ce}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:18:0:{6bf11835-8a31-496c-b01e-94f731afc7ce}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{6bf11835-8a31-496c-b01e-94f731afc7ce}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:27:0:{6bf11835-8a31-496c-b01e-94f731afc7ce}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:28:0:{6bf11835-8a31-496c-b01e-94f731afc7ce}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:29:0:{6bf11835-8a31-496c-b01e-94f731afc7ce}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:30:0:{6bf11835-8a31-496c-b01e-94f731afc7ce}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:31:0:{6bf11835-8a31-496c-b01e-94f731afc7ce}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{6bf11835-8a31-496c-b01e-94f731afc7ce}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\U\\soft lll\\BlazorApp2\\BlazorApp2\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "BlazorApp2\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\U\\soft lll\\BlazorApp2\\BlazorApp2\\Pages\\Home.razor",
+              "RelativeToolTip": "BlazorApp2\\Pages\\Home.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-08T01:47:46.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\U\\soft lll\\BlazorApp2\\BlazorApp2\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "BlazorApp2\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\U\\soft lll\\BlazorApp2\\BlazorApp2\\wwwroot\\index.html",
+              "RelativeToolTip": "BlazorApp2\\wwwroot\\index.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-05-08T01:47:14.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\U\\soft lll\\BlazorApp2\\BlazorApp2\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "BlazorApp2\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\U\\soft lll\\BlazorApp2\\BlazorApp2\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "BlazorApp2\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-08T01:47:07.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\U\\soft lll\\BlazorApp2\\BlazorApp2\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "BlazorApp2\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\U\\soft lll\\BlazorApp2\\BlazorApp2\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "BlazorApp2\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-08T01:46:59.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Locations.razor",
+              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\U\\soft lll\\BlazorApp2\\BlazorApp2\\Pages\\Locations.razor",
+              "RelativeDocumentMoniker": "BlazorApp2\\Pages\\Locations.razor",
+              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\U\\soft lll\\BlazorApp2\\BlazorApp2\\Pages\\Locations.razor",
+              "RelativeToolTip": "BlazorApp2\\Pages\\Locations.razor",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEAAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-08T01:46:31.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Episodes.cs",
+              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\U\\soft lll\\BlazorApp2\\BlazorApp2\\Models\\Episodes.cs",
+              "RelativeDocumentMoniker": "BlazorApp2\\Models\\Episodes.cs",
+              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\U\\soft lll\\BlazorApp2\\BlazorApp2\\Models\\Episodes.cs",
+              "RelativeToolTip": "BlazorApp2\\Models\\Episodes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T01:37:22.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Episode.cs",
+              "DocumentMoniker": "C:\\Users\\ideapad330S\\Documents\\U\\soft lll\\BlazorApp2\\BlazorApp2\\Models\\Episode.cs",
+              "RelativeDocumentMoniker": "BlazorApp2\\Models\\Episode.cs",
+              "ToolTip": "C:\\Users\\ideapad330S\\Documents\\U\\soft lll\\BlazorApp2\\BlazorApp2\\Models\\Episode.cs",
+              "RelativeToolTip": "BlazorApp2\\Models\\Episode.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T01:36:53.975Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 165,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
